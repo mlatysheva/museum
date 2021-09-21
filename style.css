@@ -1,46 +1,121 @@
 * {
   border: 1px solid red;
 }
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
+  font-family: "Roboto", "Georgia", "serif";
+  font-weight: lighter;
+  font-size: 22px;
+  line-height: 38.5px;
 }
 
-section {
-  padding: 75px;
-}
-
-dark-section {
-  background-color: brown;
-}
-
-video-section {
-  padding-top: 90px;
+a {
+  color: white;
 }
 
 .container {
-  margin: 0 auto;
   width: 1440px;
   max-width: 1440px;
 }
 
-.header-container {
+header {
+  position: fixed;
+  width: 100vw;
+  height: 150px;
+  background-color: #030303;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.header-logo {
-  background-image: url("assets/svg/logo.svg");
-}
-nav {
-  max-width: 720px;
+
+.header-container {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-nav ul {
+.header-logo {
+  width: 199px;
+  background-image: url("./assets/svg/logo.svg");
+  background-repeat: no-repeat;
+}
+
+.header-logo img {
+  width: 199px;
+  height: 33px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  max-width: 720px;
+  margin-left: auto;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+nav li {
+  color: white;
+  list-style: none;
+  display: inline-block;
+  padding-left: 25px;
+}
+
+main {
   display: flex;
 }
+.section-title {
+  text-transform: uppercase;
+  font-size: 80px;
+  font-weight: regular;
+}
+section {
+  padding: 75px 0;
+}
 
-nav li{
-  list-style: none;
-  padding: 20px;
+.welcome-section {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  background-color: #030303;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) calc(100% - 10px);
+}
+.welcome-section .container {
+  background-image: url("./assets/img/1.jpg");
+}
+
+.dark-section {
+  background-color: brown;
+}
+
+.video-section {
+  padding-top: 90px;
+}
+
+.dark-red {
+  background-color: #710707;
+}
+
+.bg-dark{
+  background-color: #030303;
+}
+
+.font-gold {
+  color: #9d8665;
+}
+
+.font-light {
+  color: white;
+  background-color: #030303;
 }
