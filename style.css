@@ -1,9 +1,18 @@
 * {
   border: 1px solid red;
 }
+
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #151719;
+  --dark-red: #710707;
+  --font-gold: #9d8665;
+  --font1: 80px;
+  --font2: 32px;
 }
 
 html {
@@ -12,15 +21,33 @@ html {
   font-weight: lighter;
   font-size: 22px;
   line-height: 38.5px;
+  line-height: 149%;
 }
 
 a {
   color: white;
 }
 
+h1, h2, h3 {
+  font-family: "Forum", "sans-serif";
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .container {
   width: 1440px;
   max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.light-font {
+  color: white
 }
 
 header {
@@ -41,6 +68,7 @@ header {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo {
@@ -70,33 +98,62 @@ nav li {
   padding-left: 25px;
 }
 
-main {
-  display: flex;
-}
 .section-title {
   text-transform: uppercase;
   font-size: 80px;
   font-weight: regular;
+  padding: 20px 0;
 }
+
 section {
   padding: 75px 0;
+  width: 100vw;
+  margin: auto;
 }
 
 .welcome-section {
   margin-top: 150px;
-  display: flex;
   align-items: center;
-  background-color: #030303;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: calc(100% - 20px) calc(100% - 10px);
-}
-.welcome-section .container {
-  background-image: url("./assets/img/1.jpg");
+  background-color: #030303;  
 }
 
-.dark-section {
-  background-color: brown;
+.welcome-container {
+  justify-content: center;
+  height: 750px;
+  background-image: url("./assets/img/1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0px) calc(100% - 0px);
+}
+
+.welcome-container h1 {
+  width: 600px;
+  line-height: 120%;
+}
+
+.welcome-container .btn {
+  border: none;
+  outline: 0;
+  width: 150px;
+  height: 50px;
+  font-size: large;
+  text-align: center;
+  padding: 10px 25px;
+  color: rgb(65, 63, 63);
+  background-color:seashell;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  text-shadow: none;
+}
+
+.welcome-section .btn:hover {
+  background-color: #555;
+  color: white;
+}
+.welcome-section .btn:visited {
+  background-color: #555;
+  color: rgb(190, 187, 187);
 }
 
 .video-section {
