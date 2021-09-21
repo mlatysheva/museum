@@ -1,11 +1,6 @@
-* {
+/* * {
   border: 1px solid red;
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
+} */
 
 :root {
   --bg-dark: #151719;
@@ -22,10 +17,20 @@ html {
   font-size: 22px;
   line-height: 38.5px;
   line-height: 149%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 a {
   color: white;
+}
+
+p {
+  padding: 15px 0 35px 0;
+  font-size: 28px;
 }
 
 h1, h2, h3 {
@@ -73,7 +78,7 @@ header {
 
 .header-logo {
   width: 199px;
-  background-image: url("./assets/svg/logo.svg");
+  background-image: url("../assets/svg/logo.svg");
   background-repeat: no-repeat;
 }
 
@@ -103,6 +108,7 @@ nav li {
   font-size: 80px;
   font-weight: regular;
   padding: 20px 0;
+  line-height: 90px;
 }
 
 section {
@@ -120,7 +126,7 @@ section {
 .welcome-container {
   justify-content: center;
   height: 750px;
-  background-image: url("./assets/img/1.jpg");
+  background-image: url("../assets/img/1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: calc(100% - 0px) calc(100% - 0px);
@@ -134,26 +140,22 @@ section {
 .welcome-container .btn {
   border: none;
   outline: 0;
-  width: 150px;
-  height: 50px;
-  font-size: large;
+  width: 360px;
+  height: 75px;
+  font-size: 22px;
   text-align: center;
-  padding: 10px 25px;
-  color: rgb(65, 63, 63);
-  background-color:seashell;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
-  text-shadow: none;
+  background-color: var(--dark-red);
+  color: white;
 }
 
 .welcome-section .btn:hover {
-  background-color: #555;
-  color: white;
-}
-.welcome-section .btn:visited {
-  background-color: #555;
-  color: rgb(190, 187, 187);
+  background-color: var(--font-gold);
 }
 
 .video-section {
