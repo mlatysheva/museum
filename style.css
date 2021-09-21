@@ -1,0 +1,46 @@
+* {
+  border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 75px;
+}
+
+dark-section {
+  background-color: brown;
+}
+
+video-section {
+  padding-top: 90px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  max-width: 1440px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  background-image: url("assets/svg/logo.svg");
+}
+nav {
+  max-width: 720px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li{
+  list-style: none;
+  padding: 20px;
+}
