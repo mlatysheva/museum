@@ -35,7 +35,6 @@ a {
 p {
   padding: 15px 0 35px 0;
   font-size: var(--font3);
-  letter-spacing: 2px;
 }
 
 main {
@@ -157,6 +156,10 @@ section h3 {
   padding-top: 20px;
 }
 
+.dark {
+  background-color: var(--bg-dark);
+}
+
 /* Welcome section */
 
 .welcome-section {
@@ -176,6 +179,10 @@ section h3 {
   background-position: calc(100% - 20px) calc(100% - 10px);
 }
 
+.welcome-container p {
+  letter-spacing: 2px;
+}
+
 .welcome-container .btn {
   border: none;
   outline: 0;
@@ -190,7 +197,6 @@ section h3 {
   border-radius: 5px;
   background-color: var(--dark-red);
   color: white;
-  letter-spacing: 2px;
 }
 
 .welcome-section .btn:hover {
@@ -214,7 +220,7 @@ section h3 {
 
 .visiting-container {
   position: relative;
-  height: 1116px;
+  height: 1150px;
   display: flex;
   flex-direction: column;
 }
@@ -228,7 +234,7 @@ section h3 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 .card-container a {
@@ -248,6 +254,35 @@ section h3 {
 .card p {
   padding-top: 1rem;
   padding-bottom: 0;
+}
+
+/* Explore Section */
+
+.explore-container {
+  position: relative;
+  height: 715px;
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.explore-container img {
+  position: absolute;
+  width: 720px;
+  height: 700px;
+  left: 720px;
+  top: 15px;
+}
+
+.text-wrapper {
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-wrapper p {
+  font-size: var(--font4);
 }
 
 .video-section {
