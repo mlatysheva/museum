@@ -8,6 +8,8 @@
   --font-gold: #9d8665;
   --font1: 80px;
   --font2: 32px;
+  --font3: 28px;
+  --font4: 22px;
 }
 
 html {
@@ -26,11 +28,13 @@ html {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 p {
   padding: 15px 0 35px 0;
-  font-size: 28px;
+  font-size: var(--font3);
+  letter-spacing: 2px;
 }
 
 h1, h2, h3 {
@@ -54,6 +58,9 @@ main {
 .light-font {
   color: white
 }
+.gold-font {
+  color: var(--font-gold);
+}
 
 header {
   position: fixed;
@@ -66,9 +73,6 @@ header {
 }
 
 .header-container {
-  margin: 0 auto;
-  width: 1440px;
-  max-width: 1440px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -98,17 +102,11 @@ nav {
 
 nav li {
   color: white;
+  letter-spacing: 2px;
+  font-size: var(--font4);
   list-style: none;
   display: inline-block;
   padding-left: 25px;
-}
-
-.section-title {
-  text-transform: uppercase;
-  font-size: 80px;
-  font-weight: regular;
-  padding: 20px 0;
-  line-height: 90px;
 }
 
 section {
@@ -117,24 +115,31 @@ section {
   margin: auto;
 }
 
+.section-title {
+  text-transform: uppercase;
+  font-size: var(--font1);
+  font-weight: regular;
+  font-size: 80px;
+  padding: 20px 0;
+  line-height: 90px;
+  letter-spacing: 5px;
+}
+
 .welcome-section {
   margin-top: 150px;
+  padding-top: 0;
   align-items: center;
   background-color: #030303;  
 }
 
 .welcome-container {
+  position: relative;
   justify-content: center;
   height: 750px;
   background-image: url("../assets/img/1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: calc(100% - 0px) calc(100% - 0px);
-}
-
-.welcome-container h1 {
-  width: 600px;
-  line-height: 120%;
+  background-position: calc(100% - 20px) calc(100% - 10px);
 }
 
 .welcome-container .btn {
@@ -142,20 +147,33 @@ section {
   outline: 0;
   width: 360px;
   height: 75px;
-  font-size: 22px;
+  font-size: var(--font4);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
   background-color: var(--dark-red);
   color: white;
+  letter-spacing: 2px;
 }
 
 .welcome-section .btn:hover {
   background-color: var(--font-gold);
+}
+
+.slider {
+  position: absolute;
+  width: 600px;
+  height: 120px;
+  top: 690px;
+  right: -0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #030303;
 }
 
 .video-section {
