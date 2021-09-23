@@ -50,7 +50,7 @@ main {
 .container {
   position: relative;
   width: 1440px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -328,30 +328,10 @@ section h3 {
 
 .main-video video {
   width: 100%;
-  background-image: url("assets/video/video-poster-0.jpeg");
+  background-image: url("../assets/video/video-poster-0.jpeg");
   background-size: contain;
   background-repeat: no-repeat;
 }
-
-/* .progress {
-  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
-  border: solid 2px #82CFD0;
-  border-radius: 8px;
-  height: 7px;
-  width: 400px;
-  outline: none;
-  transition: background 450ms ease-in;
-  -webkit-appearance: none;
-}
-
-.progress::-webkit-slider-thumb {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  -webkit-appearance: none;
-  cursor: ew-resize;
-  background: #434343;
-} */
 
 .video-collection {
   display: flex;
@@ -393,11 +373,6 @@ section h3 {
   overflow: hidden;
 }
 
-/* .images-container img {
-  width: 30%;
-} */
-
-
 /* .images-container{
   height: 1800px;
   width: 100%;
@@ -405,3 +380,122 @@ section h3 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
 } */
+
+/* Tickets Section */
+
+.tickets-container {
+  height: 743px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tickets-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 100px;
+}
+
+.tickets-wrapper h3 {
+  font-size: var(--font3);
+  font-weight: 400;
+  padding-top: 0;
+  padding-bottom: 70px;
+}
+
+/* Radio buttons - Exhibition type */
+
+.ticket_radio {
+	margin-bottom: 10px;
+}
+
+/* .ticket_radio input[type=radio] {
+	display: none;
+} */
+
+.ticket_radio label {
+	display: inline-block;
+	cursor: pointer;
+	/* position: relative; */
+	padding-left: 25px;
+  padding-bottom: 25px;
+	margin-right: 0;
+	line-height: 18px;
+	user-select: none;
+}
+
+.ticket_radio label:before {
+	content: "";
+	display: inline-block;
+	width: 17px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+	background: url(../assets/svg/radio-unchecked.png) 0 0 no-repeat;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+	background: url(../assets/svg/radio-checked.png) 0 0 no-repeat;
+}
+ 
+/* Hover */
+.form_radio label:hover:before {
+	filter: brightness(120%);
+}
+
+/* Ticket Amount block */
+
+.ticket-amount {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Parallax section */
+
+.parallax-wrapper {
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.parallax-img {
+  height: 400px;
+  background-image: url(../assets/img/parallax.jpeg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contacts Section */
+
+.contacts-container {
+  height: 813px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-wrapper {
+  padding: 70px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-text-wrapper {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.contacts-wrapper h3 {
+  font-size: var(--font3);
+  font-weight: 400;
+  padding-top: 0;
+  padding-bottom: 50px;
+}
+
+.contacts-wrapper img {
+  vertical-align: bottom;
+}
