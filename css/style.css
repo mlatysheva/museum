@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+a:hover, a:visited {
+  color: var(--font-gold);
+}
+
 p {
   padding: 15px 0 35px 0;
   font-size: var(--font3);
@@ -111,6 +115,15 @@ nav li {
   list-style: none;
   display: inline-block;
   padding-left: 25px;
+}
+
+/* helper class to make ancor stop after the fixed header */
+
+.anchor {
+  display:block;
+  height: 150px; /* this is the height of the header */
+  margin-top: -150px; /* this is the negative value of the height of the header */
+  visibility: hidden;
 }
 
 /* Sections */
@@ -285,7 +298,110 @@ section h3 {
   font-size: var(--font4);
 }
 
+/* Video Section */
 .video-section {
   padding-top: 90px;
 }
 
+.video-container {
+  height: 1246px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container .text-wrapper {
+  width: inherit;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.text-wrapper h2 {
+  white-space: nowrap;
+}
+
+.main-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-video video {
+  width: 100%;
+  background-image: url("assets/video/video-poster-0.jpeg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* .progress {
+  background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
+  border: solid 2px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 400px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #434343;
+} */
+
+.video-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.three-videos {
+  padding: 50px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.three-videos video {
+  width: 452px;
+  height: 254px;
+}
+
+/* Gallery section */
+
+.gallery-container {
+  background-color: var(--bg-dark);
+  height: 1900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.images-container {
+  height: 1850px;
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 30px;
+  overflow: hidden;
+}
+
+/* .images-container img {
+  width: 30%;
+} */
+
+
+/* .images-container{
+  height: 1800px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+} */
