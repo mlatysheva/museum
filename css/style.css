@@ -28,12 +28,27 @@ html {
   box-sizing: inherit;
 }
 
+/* Links */
+
 a {
   text-decoration: none;
+  letter-spacing: 2px;
+  color: white;
 }
 
-a:hover, a:visited {
+.dark-bg a {  
+  color: white;
+}
+
+.light-bg a {
+  color: black;
+}
+
+a:visited {
   color: var(--font-gold);
+}
+a:hover {
+  color: #7E6C51;
 }
 
 p {
@@ -498,4 +513,48 @@ section h3 {
 
 .contacts-wrapper img {
   vertical-align: bottom;
+}
+
+/* footer */
+
+footer {
+  background-color: var(--bg-dark);
+  height: 392px;
+}
+
+.footer-wrapper {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-top .logo {
+  align-self: flex-start;
+}
+
+.social-networks {
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.footer-bottom {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer li {
+  padding-bottom: 20px;
+}
+
+footer hr {
+  color: white;
+  width: inherit;
 }
