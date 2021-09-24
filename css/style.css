@@ -36,7 +36,7 @@ a {
   color: white;
 }
 
-.dark-bg a {  
+.dark-bg {  
   color: white;
 }
 
@@ -524,6 +524,8 @@ footer {
 
 .footer-wrapper {
   width: 1440px;
+  margin: 0 auto;
+  padding-top: 70px;
   display: flex;
   flex-direction: column;
 }
@@ -557,4 +559,9 @@ footer li {
 footer hr {
   color: white;
   width: inherit;
+}
+
+.footer-bottom p {
+  padding: 0 0;
+  font-size: var(--font4);
 }
