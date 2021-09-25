@@ -40,19 +40,22 @@ a {
   color: white;
 }
 
+.dark {
+  background-color: var(--bg-dark);
+}
+
 .light-bg a {
   color: black;
 }
 
-a:visited {
+a:hover {
   color: var(--font-gold);
 }
-a:hover {
+a:visited {
   color: #7E6C51;
 }
 
 p {
-  padding: 15px 0 35px 0;
   font-size: var(--font3);
 }
 
@@ -147,7 +150,6 @@ nav li {
   font-family: "Forum", "sans-serif";
   font-style: normal;
   font-weight: normal;
-  /* font-size: var(--font1); */
   line-height: 90px;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -160,7 +162,7 @@ nav li {
 .underline-title::after {
   content: "";
   position: absolute;
-  bottom: -0.7rem;
+  bottom: -0.8rem;
   left: 0;
   right: 0;
   height: 3px;
@@ -179,17 +181,13 @@ section h1, h2 {
 
 section h3 {
   font-size: var(--font2);
-  padding-top: 20px;
-}
-
-.dark {
-  background-color: var(--bg-dark);
 }
 
 /* Welcome section */
 
 .welcome-section {
   margin-top: 150px;
+  height: 810px;
   padding-top: 0;
   align-items: flex-start;
   background-color: #030303;  
@@ -200,8 +198,6 @@ section h3 {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
   height: 750px;
   background-image: url("../assets/img/1.jpg");
   background-size: contain;
@@ -210,11 +206,12 @@ section h3 {
 }
 
 .welcome-container h1 {
-  padding-top: 0;
+  padding-top: 150px;
 }
 .welcome-container p {
   letter-spacing: 2px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 .welcome-container a {
@@ -250,9 +247,31 @@ section h3 {
   right: -0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #030303;
+}
+.slider-numbers {
+  height: 22px;
+}
+
+.slider-numbers p {
+  padding: 0 10px;
+  font-size: var(--font4);
+}
+
+.slider-bullets {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.slider-arrows {
+  width: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* Visiting section */
