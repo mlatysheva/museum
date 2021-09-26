@@ -114,6 +114,9 @@ header {
 
 .header-logo {
   width: 199px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo img {
@@ -183,7 +186,7 @@ section {
   margin: auto;
 }
 
-section h1, h2 {
+section h2 {
   font-size: var(--font1);
   line-height: 90px;
 }
@@ -215,7 +218,7 @@ section h3 {
   background-position: calc(100% - 0px) calc(100% - 0px);
 }
 
-.welcome-container h1 {
+.welcome-container h2 {
   padding-top: 150px;
 }
 .welcome-container p {
@@ -447,31 +450,40 @@ section h3 {
 
 /* Gallery section */
 
+.gallery-section {
+  padding-bottom: 0;
+  height: 2200px;
+}
+
 .gallery-container {
-  background-color: var(--bg-dark);
-  height: 1900px;
+  width: 1440px;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.images-container {
-  height: 1850px;
-  width: 1440px;
+.picture-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 70px;
+  padding-bottom: 0;
+  overflow-y: hidden;
+}
+
+.picture-inner-container {
+  height: 2550px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 30px;
-  overflow: hidden;
+  row-gap: 5px;
+  column-gap: 25px;
+  column-count: 3;
 }
 
-/* .images-container{
-  height: 1800px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
-} */
+.picture-container img { 
+  margin: 0 0 1em;
+  object-fit: cover;
+}
 
 /* Tickets Section */
 
