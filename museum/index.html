@@ -137,18 +137,26 @@
           <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
         </div>
         <div class="main-video">
-          <!-- <img src="assets/video/Big-play.png"> -->
-          <video controls
-            src="assets/video/video.mp4"
-            poster="assets/video/video-poster-0.jpeg">
+          <video poster="assets/video/video-poster-0.jpeg">
+            <source src="assets/video/video.mp4">            
             <input type="range" value="40" min="0" max="100" step="1" class="progress">
-          </video>          
+          </video>   
+          <!-- <div class="play-button">
+            <img src="assets/svg/big-play.svg" alt="">
+          </div>    -->
+          <div class="video-controls">
+            <img src="assets/svg/play.svg" alt="">
+            <img src="assets/svg/big-video-slider.svg" alt="">
+            <img src="assets/svg/volume.svg" alt="">
+            <img src="assets/svg/small-video-slider.svg" alt="">
+            <img src="assets/svg/fullscreen.svg" alt="">
+          </div>    
         </div>
         <div class="video-collection">
           <div class="three-videos">
-            <video src="assets/video/video1.mp4" poster="assets/video/video-poster-1.jpeg"></video>
-            <video src="assets/video/video3.mp4" poster="assets/video/video-poster-2.jpeg"></video>
             <video src="assets/video/video2.mp4" poster="assets/video/video-poster-3.jpeg"></video>
+            <video src="assets/video/video1.mp4" poster="assets/video/video-poster-1.jpeg"></video>
+            <video src="assets/video/video3.mp4" poster="assets/video/video-poster-2.jpeg"></video>            
           </div>
           <div class="video-pagination">
             <img src="assets/video/video-pagination-unvisited.png" alt="">
