@@ -131,8 +131,14 @@ header {
 }
 
 .header-logo img {
-  width: 199px;
-  height: 33px;
+  width: 49px;
+  height: 26px;
+}
+
+.header-logo h1 {
+  font-weight: 400px;
+  letter-spacing: 5px;
+  font-size: 28px;
 }
 
 nav {
@@ -728,24 +734,41 @@ footer {
 .footer-wrapper {
   width: 1440px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
 }
 
 .footer-top {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .footer-top .logo {
   align-self: flex-start;
 }
 
+.footer-links-list {
+  width: 365px;
+  margin-right: 250px;
+  column-count: 2;
+  column-gap: 130px;
+  /* justify-content: space-between; */
+}
+
+.footer-links-list li {
+  padding-top: 10px;
+}
+
 .social-networks {
-  display: inline-block;
+  width: 340px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
   align-self: flex-end;
+  justify-content: space-between;
 }
 
 .footer-bottom {
@@ -755,6 +778,9 @@ footer {
   justify-content: space-between;
 }
 
+.footer-bottom p {
+  letter-spacing: 2px;
+}
 footer li {
   padding-bottom: 20px;
 }
