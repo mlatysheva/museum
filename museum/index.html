@@ -173,18 +173,18 @@
         <h2 class="section-title light-font">Art Gallery</h2>
         <div class="picture-container">
           <div class="picture-inner-container">
-            <img src="assets/img/galery2_1.jpg" alt="Louvre collection" style="padding-top: 50px">
-            <img src="assets/img/galery9_1.jpg" alt="Louvre collection">
-            <img src="assets/img/galery4_1.jpg" alt="Louvre collection">
-            <img src="assets/img/galery6.jpeg" alt="Louvre collection">
-            <img src="assets/img/galery1_1.jpg" alt="Louvre collection">          
-            <img src="assets/img/galery8_1.jpg" alt="Louvre collection">       
+            <img src="assets/img/galery1.jpg" alt="Louvre collection" style="padding-top: 50px">
+            <img src="assets/img/galery2.jpg" alt="Louvre collection">
+            <img src="assets/img/galery3.jpg" alt="Louvre collection">
+            <img src="assets/img/galery4.jpeg" alt="Louvre collection">
+            <img src="assets/img/galery5.jpg" alt="Louvre collection">          
+            <img src="assets/img/galery6.jpg" alt="Louvre collection">   
             
-            <img src="assets/img/galery3_1.jpg" alt="Louvre collection">          
-            <img src="assets/img/galery5.jpeg" alt="Louvre collection">
-            <img src="assets/img/galery7_1.jpg" alt="Louvre collection" style="padding-top: 50px">
-            <img src="assets/img/galery10_1.jpg" alt="Louvre collection">
-            <img src="assets/img/galery15_1.jpg" alt="Louvre collection">
+            <img src="assets/img/galery7.jpg" alt="Louvre collection">   
+            <img src="assets/img/galery8.jpeg" alt="Louvre collection">
+            <img src="assets/img/galery9.jpg" alt="Louvre collection" style="padding-top: 50px">
+            <img src="assets/img/galery10.jpg" alt="Louvre collection">
+            <img src="assets/img/galery11.jpg" alt="Louvre collection">
             <img src="assets/img/galery12.jpeg" alt="Louvre collection">
           </div>
         </div>
@@ -199,53 +199,51 @@
         <div class="tickets-wrapper">
           <img src="assets/img/buy-tickets-img.jpg" alt="A painting by David">
           <div class="ticket-type">
-
             <h4>Ticket Type</h4>
 
             <!-- Radio buttons for exhibition -->
 
-            <div class="ticket_radio">
-              <input type="radio" id="permanent" name="radio" checked>
-              <label for="permanent">Permanent exhibition</label>
-            </div>
+            <label class="radio-container">Permanent exhibition
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
 
-            <div class="ticket_radio">
-              <input type="radio" id="temporary" name="radio">
-              <label for="temporary">Temporary exhibition</label>
-            </div>
+            <label class="radio-container">Temporary exhibition
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
 
-            <div class="ticket_radio">
-              <input type="radio" id="combined" name="radio">
-              <label for="combined">Combined admission</label>
-            </div>
+            <label class="radio-container">Combined admission
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            
           </div> <!-- End of radio buttons -->
 
           <!-- Ticket Amount block -->
 
           <div class="ticket-amount">
-            <h4>Amount</h4>
-            <div class="ticket-age">
-              <p>Basic 18+</p>
+            <div class="amount-block">
+              <h4 class="font3">Amount</h4>
+              <p class="font4">Basic 18+</p>
+              <img src="assets/svg/ticket-number.svg" alt="">
+              <p class="font4">Senior 65+</p>
+              <img src="assets/svg/ticket-number.svg" alt="">
+              <div class="total-amount">
+                <p>Total $220</p>
+              </div>
             </div>
-            <div class="ticket-age">
-              <p>Senior 65+</p>
-            </div>
-            <div class="total-amount">
-              <p>Total $220</p>
-            </div>
-            <div class="btn">
-              <button>Buy now</button>
-            </div>
-          </div> <!-- End of Ticket Amount block-->
+            <div class="button light-font">
+              <a href="" target="_blank">Buy now</a>
+            </div> 
+          </div><!-- End of Ticket Amount -->
 
         </div> <!-- End of tickets-wrapper -->
       </div>   <!-- End of tickets-container -->        
     </section> <!-- End of Tickets Section -->
 
     <!-- Parallax -->
-    <div class="parallax-wrapper">
-      <div class="parallax-img"></div>
-    </div>
+    <div class="parallax"></div>
 
     <!-- Contacts Section -->
     <section class="section light contacts-section">
@@ -296,6 +294,6 @@
     </div> <!-- End of footer-wrapper-->
 
   </footer>
-  
+  <script src="js/gallery.js"></script>  
 </body>
 </html>

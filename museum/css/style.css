@@ -512,71 +512,150 @@ section h3 {
   padding-top: 100px;
 }
 
-.tickets-wrapper h3 {
+.tickets-wrapper h4 {
   font-size: var(--font3);
   font-weight: 400;
-  padding-top: 0;
-  padding-bottom: 70px;
+  padding-top: 5px;
+  padding-bottom: 55px;
+}
+
+.ticket-type {
+  padding-right: 190px;
 }
 
 /* Radio buttons - Exhibition type */
 
-.ticket_radio {
-	margin-bottom: 10px;
+.radio-container {
+	padding-bottom: 20px;
 }
 
-/* .ticket_radio input[type=radio] {
-	display: none;
-} */
-
-.ticket_radio label {
-	display: inline-block;
-	cursor: pointer;
-	/* position: relative; */
-	padding-left: 25px;
-  padding-bottom: 25px;
-	margin-right: 0;
-	line-height: 18px;
-	user-select: none;
+/* Customize the label (the container) */
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.ticket_radio label:before {
-	content: "";
-	display: inline-block;
-	width: 17px;
-	height: 18px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background: url(../assets/svg/radio-unchecked.png) 0 0 no-repeat;
+/* Hide the browser's default radio button */
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
- 
-/* Checked */
-.form_radio input[type=radio]:checked + label:before {
-	background: url(../assets/svg/radio-checked.png) 0 0 no-repeat;
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid black;
 }
- 
-/* Hover */
-.form_radio label:hover:before {
-	filter: brightness(120%);
+
+/* On mouse-over, add a grey background color */
+.radio-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio-container input:checked ~ .checkmark {
+  background-color: white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio-container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background:black;
 }
 
 /* Ticket Amount block */
 
 .ticket-amount {
+  width: 175px;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
 }
 
+.amount-block {
+  width: 150px;
+}
+.amount-block img {
+  width: 150px;
+}
+
+.amount-block h4 {
+  text-align: right;
+  padding-bottom: 15px;
+}
+
+.amount-block p{
+  font-weight: 200;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.total-amount p {
+  padding-top: 50px;
+  font-size: var(--font3);
+  font-weight: 400;
+  text-align: right;
+  letter-spacing: 1.65px;
+}
+
+.button {
+  width: 175px;
+  height: 50px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-color: #030303;
+}
+
+.button a {
+  color: white;
+  display: block;
+}
 /* Parallax section */
 
-.parallax-wrapper {
-  width: 100vw;
+.parallax {
+  width: 100%;
+  height: 440px;
   padding: 20px 0;
-}
-
-.parallax-img {
-  height: 400px;
   background-image: url(../assets/img/parallax.jpeg);
   background-attachment: fixed;
   background-position: center;
