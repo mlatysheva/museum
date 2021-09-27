@@ -16,6 +16,7 @@
 }
 
 html {
+  margin:auto;
   scroll-behavior: smooth;
   font-family: "Roboto", "Georgia", "serif";
   font-weight: lighter;
@@ -23,6 +24,10 @@ html {
   line-height: 38.5px;
   line-height: 149%;
   box-sizing: border-box;
+}
+
+html, body {
+  margin: 0 auto;
 }
 
 *, *::before, *::after {
@@ -60,6 +65,9 @@ p {
   font-size: var(--font3);
 }
 
+.font3 {
+  font-size: var(--font3);
+}
 .font4 {
   font-size: var(--font4);
 }
@@ -72,7 +80,10 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* to center the sections and to let background stretch across the viewport */
+  margin: auto; 
 }
+
 
 .container {
   position: relative;
@@ -96,7 +107,7 @@ main {
 header {
   position: fixed;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   height: 150px;
   background-color: #030303;
   display: flex;
@@ -182,8 +193,8 @@ nav li {
 
 section {
   padding: 75px 0;
-  width: 100vw;
-  margin: auto;
+  width: 100%;
+  /* margin: 0 auto; */
 }
 
 section h2 {
@@ -653,9 +664,11 @@ section h3 {
 /* Parallax section */
 
 .parallax {
-  width: 100%;
-  height: 440px;
+  /* position: relative; */
+  width: 100vw;
+  min-height: 400px;
   padding: 20px 0;
+  display: flex;
   background-image: url(../assets/img/parallax.jpeg);
   background-attachment: fixed;
   background-position: center;
@@ -672,7 +685,7 @@ section h3 {
 }
 
 .contacts-wrapper {
-  padding: 70px 0;
+  padding: 105px 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -684,11 +697,21 @@ section h3 {
   justify-content: flex-start;
 }
 
-.contacts-wrapper h3 {
+.contact-text-wrapper h4 {
   font-size: var(--font3);
   font-weight: 400;
   padding-top: 0;
   padding-bottom: 50px;
+}
+
+.contact-text-wrapper p {
+  padding: 15px 0;
+}
+.contact-text-wrapper a {
+  color: black;
+  padding: 15px 0;
+  line-height: 28px;
+  letter-spacing: normal;
 }
 
 .contacts-wrapper img {
