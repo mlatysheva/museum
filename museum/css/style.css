@@ -76,6 +76,22 @@ p {
   font-size: var(--font5);
 }
 
+.bold {
+  font-weight: 400;
+}
+
+.gold-font {
+  color: var(--font-gold);
+}
+
+.red-font {
+  color: var(--dark-red);
+}
+
+.black-font {
+  color: black;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -666,6 +682,10 @@ section h3 {
 .button a {
   color: white;
   display: block;
+}
+
+.button:hover {
+  background-color: var(--font-gold);
 }
 /* Parallax section */
 
