@@ -168,6 +168,25 @@ section h3 {
   line-height: 110%;
 }
 
+@media  (max-width: 1024px) {
+  .section {
+    padding: 50px 0;
+  }  
+}
+
+@media  (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }  
+}
+
+@media (max-width: 420px) {
+  .section {
+    padding: 30px 0;
+  } 
+}
+
+
 .container {
   position: relative;
   padding: 0 20px;
@@ -234,7 +253,9 @@ header {
 .logo:hover {
   filter: invert(55%) sepia(11%) saturate(939%) hue-rotate(356deg) brightness(96%) contrast(92%);
 }
-
+.header-logo a {
+  letter-spacing: 5px;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -322,7 +343,7 @@ nav li {
 
 @media (max-width: 1024px) {
   .welcome-section {
-    height: 515px;
+    height: 585px;
   }
   .welcome-container h2 {
     padding-top: 50px;
@@ -335,22 +356,38 @@ nav li {
     width: 300px;
     height: 60px;
   }
+  .welcome-container {
+    padding-top: -40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    background-image: url("../assets/img/1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 0px) calc(100% - 0px);
+  }
 }
 
 .slider {
   position: absolute;
-  width: 600px;
+  width: 700px;
   height: 120px;
   /* bottom: -75px; */
   /* top: 690px; */
   right: 0;
-  bottom: -50px;
+  bottom: -55px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   background-color: #030303;
 }
+
+@media (max-width: 1024px) {
+  .slider {
+    bottom: -70px;
+  }
 
 .slider-numbers {
   height: 22px;
@@ -471,6 +508,17 @@ nav li {
 .card p {
   padding-top: 20px;
   padding-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .card {
+    width: 330px;
+  }
+}
+@media (max-width: 796px) {
+  .card {
+    width: 280px;
+  }
 }
 
 /* Explore Section */
