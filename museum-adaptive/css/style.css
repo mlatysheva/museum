@@ -664,7 +664,6 @@ header {
   position: absolute;
   top: 335px;
   left: 345px;
-  z-index: 9;
   cursor: ew-resize;
   width: 30px;
   height: 30px;
@@ -696,7 +695,7 @@ header {
 @media (max-width: 1024px) {
 
   .explore-container {
-    height: 1050px;
+    height: 1000px;
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 0px;
@@ -706,7 +705,7 @@ header {
     align-items: flex-start;
   }
 
-  .hidden {
+  .velaskes-hidden {
     display: none;
   }
   .text-wrapper h2 {
@@ -716,13 +715,8 @@ header {
     margin-top: 0;
     align-self: center;
   }
-  .explore-painting img {
-    /* left: 0;
-    top: auto; */
-    /* align-self: center; */
-  }
-  
 }
+
 @media (max-width: 796px) {
   
 }
