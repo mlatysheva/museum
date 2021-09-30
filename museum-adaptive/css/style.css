@@ -187,7 +187,7 @@ section {
 
 @media  (max-width: 1024px) {
   .container {
-    max-width: 984px;
+    max-width: 1024px;
   }  
 }
 
@@ -531,8 +531,20 @@ header {
 .visiting-container {
   position: relative;
   height: 1116px;
+  width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .visiting-container {
+    height: 1350px;
+  }
+}
+@media (max-width: 796px) {
+  .visiting-container {
+    /* height: 1313px; */
+  }
 }
 
 .card-container .underline-title::after {
@@ -545,20 +557,28 @@ header {
 
 .card-container {
   position: absolute;
-  left: 0px;
-  top: 193px;
+  top: 11rem;
+  max-width: 100%;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  align-self: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  row-gap: 75px; 
-  column-gap: 50px;
+  row-gap: 3.5rem; 
+  column-gap: 2.5rem;
 }
 
 .card-container a {
   display: block;
   padding-bottom: 20px;
+}
+
+.card:hover .underline-title::after {
+  width: 100%;
+  transition: 0.7s ease;
 }
 
 .card {
@@ -567,8 +587,8 @@ header {
 }
 
 .card img {
-  width: 440px;
-  height: 285px;
+  width: 100%;
+  height: 100%;
 }
 
 .card p {
@@ -576,16 +596,21 @@ header {
   padding-bottom: 0;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
+
+  .card-container {
+    max-width: 770px;
+  }
   .card {
     width: 330px;
+    height: 345px;
   }
 }
 @media (max-width: 796px) {
   .card {
     width: 280px;
   }
-} */
+}
 
 /* Explore Section */
 
