@@ -15,33 +15,38 @@
   <title>Museum</title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="container header-container">
       <div class="header-logo">
         <div class="logo"></div>
         <h1 class="light-font section-title font3 spacing5"><a href="https://www.louvre.fr/en">Louvre</a></h1>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#visiting" class="dark-bg font4">Visiting</a></li>
-          <li><a href="#explore" class="dark-bg font4">Explore</a></li>
-          <li><a href="#video" class="dark-bg font4">Video</a></li>
-          <li><a href="#gallery" class="dark-bg font4">Gallery</a></li>
-          <li><a href="#tickets" class="dark-bg font4">Tickets</a></li>
-          <li><a href="#contacts" class="dark-bg font4">Contacts</a></li>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#visiting" class="dark-bg font4 nav-link">Visiting</a></li>
+          <li class="nav-item"><a href="#explore" class="dark-bg font4 nav-link">Explore</a></li>
+          <li class="nav-item"><a href="#video" class="dark-bg font4 nav-link">Video</a></li>
+          <li class="nav-item"><a href="#gallery" class="dark-bg font4 nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#tickets" class="dark-bg font4 nav-link">Tickets</a></li>
+          <li class="nav-item"><a href="#contacts" class="dark-bg font4 nav-link">Contacts</a></li>
         </ul>
       </nav>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     </div>  
   </header>
-
+ 
   <main>
     <!-- Welcome Section -->
     <section class="section dark welcome-section" id="welcome">
       <div class="container welcome-container">
-        <h2 class="section-title light-font font1">Welcome <br>to the Louvre</h2>
-        <p class="light-font">From the castle to the museum</p>
+        <h2 class="section-title light-font font1 hidden" id="hiddenWelcome">Welcome <br>to the Louvre</h2>
+        <p class="light-font hidden" id="hiddenMuseum">From the castle to the museum</p>
         <a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736"
-        class="btn light-font">Discover the Louvre</a>
+        class="btn light-font hidden" id="hiddenButton">Discover the Louvre</a>
         <div class="slider">
           <div class="slider-numbers">
             <p class="dark-bg font4"><span class="slider-first-number">01</span> | <span class="slider-last-number">05</span></p>>
@@ -71,7 +76,7 @@
         <div class="card-container"> 
           <div class="card">
             <a href=""><img src="assets/img/Rectangle-6.jpg" alt="Royal Palace"></a>
-            <h3 class="section-title underline-title font3">Royal Palace</h3>
+            <h3 class="section-title underline-title font3 visiting-card-title">Royal Palace</h3>
             <p class="font4">360° Virtual Tour</p>
             <p class="font5">Google Street Panorama View</p>
           </div>
@@ -262,9 +267,12 @@
   </main>
 
   <footer>
-    <div class="footer-wrapper">
+    <div class="container footer-wrapper">
       <div class="footer-top">
-        <img src="assets/svg/Logo.svg" alt="Louvre logo" class="logo">
+        <div class="header-logo">
+          <div class="logo"></div>
+          <h1 class="light-font section-title font3 spacing5"><a href="https://www.louvre.fr/en">Louvre</a></h1>
+        </div>
         <ul class="footer-links-list">
           <li><a href="#visiting" class="dark-bg font4">Visiting</a></li>
           <li><a href="#explore" class="dark-bg font4">Explore</a></li>
@@ -291,6 +299,9 @@
     </div> <!-- End of footer-wrapper-->
 
   </footer>
+  <script src="js/menu.js"></script>
+
+  
   <!-- <script src="js/gallery.js"></script>   -->
 </body>
 </html>

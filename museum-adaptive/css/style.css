@@ -157,16 +157,6 @@ section {
   padding: 75px 0;
 }
 
-/* section h2 {
-  font-size: var(--font1);
-  /* line-height: 90px; */
-/* } */
-
-/* section h3 {
-  font-size: var(--font2);
-  /* line-height: 110%; */
-/* } */
-
 @media  (max-width: 1024px) {
   .section {
     padding: 50px 0;
@@ -255,7 +245,7 @@ header {
 .header-logo a {
   letter-spacing: 5px;
 }
-nav {
+.navbar {
   display: flex;
   flex-direction: row;
   max-width: 830px;
@@ -264,7 +254,7 @@ nav {
   justify-content: space-between;  
 }
 
-nav li {
+.nav-item {
   letter-spacing: 2px;
   font-size: var(--font4);
   list-style: none;
@@ -281,8 +271,81 @@ nav li {
   visibility: hidden;
 }
 
-/* Sections */
+.hamburger {
+  display: none;
+  padding: 5px;
+}
 
+.hidden {
+  visibility: show;
+}
+
+/* Adaptive burger menu */
+
+@media only screen and (max-width: 1024px) {
+
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  .hamburger:hover {
+    background-color: #710707;
+  }
+  .bar:hover {
+    background-color: var(--dark-red);
+  }
+  
+  .nav-menu {
+      position: fixed;
+      width: 300px;
+      height: 450px;
+      padding: 40px;
+      left: -100%;
+      top: 8rem;      
+      display: flex;
+      flex-direction: column;
+      background-color: black;
+      align-items: flex-start;
+      justify-content: space-around;
+      text-align: center;
+      transition: 0.7s;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .hidden.active {
+    visibility: hidden;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+/* End of burger menu */
+
+/* Sections */
 
 /* Welcome section */
 
@@ -473,6 +536,9 @@ nav li {
 }
 
 .card-container .underline-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
   bottom: -10px;
   width: 70%;
 }
@@ -920,8 +986,9 @@ footer {
   justify-content: space-between;
 }
 
-.footer-top .logo {
+.footer-top .header-logo {
   align-self: flex-start;
+  align-items: flex-start;
 }
 
 .footer-links-list {
