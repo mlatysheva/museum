@@ -388,6 +388,7 @@ nav li {
   .slider {
     bottom: -70px;
   }
+}
 
 .slider-numbers {
   height: 22px;
@@ -510,7 +511,7 @@ nav li {
   padding-bottom: 0;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .card {
     width: 330px;
   }
@@ -519,7 +520,7 @@ nav li {
   .card {
     width: 280px;
   }
-}
+} */
 
 /* Explore Section */
 
