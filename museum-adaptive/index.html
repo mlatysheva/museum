@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="./assets/svg/favicon.ico">
-  <!-- <script src="js/app.js"></script> -->
   <title>Museum</title>
 </head>
 <body>
@@ -125,7 +124,7 @@
           <h2 class="section-title underline-title font1">Picture explore</h2>
           <p class="font4">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age. </p>
           <p class="font4">It was cleaned in 1984 to remove a <span class="gold-font">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
-          <p class="font4 velaskes-hidden">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+          <p class="font4 paragraph-hidden">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
         </div>
         <div class="painting-wrapper">
           <div class="explore-painting">
@@ -145,21 +144,17 @@
       <div class="container video-container">
         <div class="text-wrapper dark-font">
           <h2 class="section-title gold-font font1">Video journey</h2>
-          <p class="font3">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+          <p class="font3 paragraph-hidden">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
         </div>
         <div class="main-video">
-          <video poster="assets/video/video-poster-0.jpeg">
-            <source src="assets/video/video.mp4">            
-            <input type="range" value="40" min="0" max="100" step="1" class="progress">
-          </video>   
-    
+          <button class="big-play-button" id="big-play-button"></button>    
           <div class="video-controls">
-            <img src="assets/svg/play.svg" alt="">
-            <img src="assets/svg/big-video-slider.svg" alt="">
-            <img src="assets/svg/volume.svg" alt="">
-            <img src="assets/svg/small-video-slider.svg" alt="">
-            <img src="assets/svg/fullscreen.svg" alt="">
-          </div>    
+            <button class="video-controls-button play-button" id="play-button"></button>
+            <input type="range" value="50" min="0" max="100" step="1" class="video-slider play-slider" id="video-play-slider">
+            <button class="video-controls-button volume-button" id="volume-button"></button>
+            <input type="range" value="50" min="0" max="100" step="1" class="video-slider volume-slider" id="video-volume-slider">
+            <button class="video-controls-button screenmode-button" id="screenmode-button"></button>
+          </div>
         </div>
         <div class="video-collection">
           <div class="three-videos">
@@ -304,9 +299,7 @@
     </div> <!-- End of footer-wrapper-->
 
   </footer>
-  <script src="js/menu.js"></script>
-
-  
-  <!-- <script src="js/gallery.js"></script>   -->
+  <script src="js/menu.js"></script>  
+  <script src="js/videoControl.js"></script>  
 </body>
 </html>
