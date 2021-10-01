@@ -886,9 +886,54 @@ header {
   justify-content: space-between;
 }
 
-.three-videos video {
-  width: 452px;
-  height: 254px;
+.video-pagination {
+  width: 200px;
+  height: 12px;
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.video-pagination-backward-arrow {
+  width: 12px;
+  height: 100%;
+  background-image: url(../assets/svg/video-arrow-backward.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.video-pagination-backward-arrow:hover {
+  filter: invert(10%) sepia(36%) saturate(6711%) hue-rotate(348deg) brightness(70%) contrast(108%);
+}
+
+.video-pagination-bullet {
+  height: 100%;
+  width: 12px;
+  background-image: url(../assets/svg/video-dot.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.video-bullet-active {
+  filter: invert(10%) sepia(36%) saturate(6711%) hue-rotate(348deg) brightness(10%) contrast(108%);
+}
+
+.video-pagination-bullet:hover {
+  filter: invert(10%) sepia(36%) saturate(6711%) hue-rotate(348deg) brightness(70%) contrast(108%);
+}
+
+.video-pagination-bullet.active {
+  filter: invert(0%) sepia(1%) saturate(7484%) hue-rotate(49deg) brightness(70%) contrast(98%);
+}
+.video-pagination-forward-arrow {
+  width: 12px;
+  height: 100%;
+  background-image: url(../assets/svg/video-arrow-forward.svg);
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.video-pagination-forward-arrow:hover {
+  filter: invert(10%) sepia(36%) saturate(6711%) hue-rotate(348deg) brightness(70%) contrast(108%);
 }
 
 /* Gallery section */
