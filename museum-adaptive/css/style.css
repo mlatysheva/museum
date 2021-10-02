@@ -187,7 +187,7 @@ section {
 
 @media  (max-width: 1024px) {
   .container {
-    max-width: calc(1024px - 40px);
+    max-width: calc(1024px - 0px);
   }  
 }
 
@@ -427,7 +427,7 @@ header {
     background-image: url("../assets/img/1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: calc(100% - 0px) calc(100% - 0px);
+    background-position: calc(100% - 20px) calc(100% - 0px);
   }
 }
 
@@ -528,15 +528,20 @@ header {
 
 /* Visiting section */
 
+.visiting-section {
+  min-height: fit-content;
+}
+
 .visiting-container {
   position: relative;
   height: 1116px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1450px) {
   .visiting-container {
     height: 1350px;
   }
@@ -558,17 +563,17 @@ header {
 .card-container {
   position: absolute;
   top: 11rem;
-  max-width: 100%;
+  max-width: 100%;  
   margin-bottom: 30px;
   padding: 0 20px;
   align-self: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  row-gap: 3.5rem; 
-  column-gap: 2.5rem;
+  row-gap: 3rem; 
+  column-gap: 2rem;
 }
 
 .card-container a {
@@ -582,8 +587,8 @@ header {
 }
 
 .card {
-  width: 440px;
-  height: 424px;
+  max-width: 440px;
+  max-height: 424px;
 }
 
 .card img {
@@ -596,7 +601,8 @@ header {
   padding-bottom: 0;
 }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1450px) { */
+@media (max-width: 1450px) {
 
   .card-container {
     max-width: 770px;
@@ -1083,7 +1089,7 @@ header {
 
 @media (max-width: 1024px) {
   .picture-container img {
-    width: 304px;
+    max-width: 304px;
   }
 }
 
@@ -1109,8 +1115,26 @@ header {
   padding-bottom: 55px;
 }
 
+.ticket-image {
+  width:720px;
+  height: 550px;
+}
+
 .ticket-type {
   padding-right: 190px;
+}
+
+@media (max-width: 1024px) {
+  .tickets-container {
+    height: 598px;
+  }
+  .ticket-image {
+    width: 700px;
+    height: 440px;
+  }
+  .ticket-type {
+    display: none;
+  }
 }
 
 /* Radio buttons - Exhibition type */
@@ -1222,6 +1246,18 @@ header {
   letter-spacing: 1.65px;
 }
 
+@media (max-width: 1024px) {
+
+  .amount-block {
+    width: 175px;
+  }
+  .amount-block h4  {
+    text-align: left;
+  }
+  .total-amount p {
+    text-align: left;
+  }
+}
 .button {
   width: 175px;
   height: 50px;
@@ -1250,7 +1286,7 @@ header {
   /* position: relative; */
   width: 100vw;
   min-height: 400px;
-  padding: 20px 0;
+  margin: 20px 0;
   display: flex;
   background-image: url(../assets/img/parallax.jpeg);
   background-attachment: fixed;
@@ -1283,6 +1319,7 @@ header {
 .contact-text-wrapper h4 {
   font-size: var(--font3);
   font-weight: 400;
+  line-height: 130%;
   padding-top: 0;
   padding-bottom: 50px;
 }
@@ -1291,14 +1328,27 @@ header {
   padding: 15px 0;
 }
 .contact-text-wrapper a {
+  display: block;
   color: black;
-  padding: 15px 0;
-  line-height: 28px;
+  padding: 10px 0;
   letter-spacing: normal;
 }
 
 .contacts-wrapper img {
   vertical-align: bottom;
+}
+
+@media (max-width: 1024px) {
+  .contacts-container {
+    height: 614px;
+  }
+  .contacts-wrapper img {
+    width: 694px;
+    height: 454px;
+  }
+  .contact-text-wrapper h4 {
+    padding-bottom: 30px;
+  }
 }
 
 /* footer */
@@ -1324,16 +1374,17 @@ footer {
 }
 
 .footer-top .header-logo {
+  width: 195px;
   align-self: flex-start;
   align-items: flex-start;
 }
 
 .footer-links-list {
   width: 365px;
-  margin-right: 250px;
+  padding-left: 100px;
+  margin-right: auto;
   column-count: 2;
   column-gap: 130px;
-  /* justify-content: space-between; */
 }
 
 .footer-links-list li {
@@ -1347,6 +1398,34 @@ footer {
   flex-direction: row;
   align-self: flex-end;
   justify-content: space-between;
+}
+.social-link {
+  width: 48px;
+  height: 48px;
+  padding: 15px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-position: center;
+}
+.social-link:hover {
+  filter: invert(54%) sepia(42%) saturate(293%) hue-rotate(356deg) brightness(92%) contrast(84%);
+}
+.youtube-icon {
+  background-image: url(../assets/svg/youtube-icon.svg);
+}
+.instagram-icon {
+  background-image: url(../assets/svg/instagram-icon.svg);
+}
+.facebook-icon {
+  background-image: url(../assets/svg/facebook-icon.svg);
+}
+.twitter-icon {
+  background-image: url(../assets/svg/twitter-icon.svg);
+}
+.pinterest-icon {
+  background-image: url(../assets/svg/pinterest-icon.svg);
 }
 
 .footer-bottom {
@@ -1371,4 +1450,13 @@ footer hr {
 .footer-bottom p {
   padding: 0 0;
   font-size: var(--font4);
+}
+
+@media (max-width: 1024px) {
+  .footer-links-list {
+    width: 313px;
+    padding-left: 100px;
+    column-count: 2;
+    column-gap: 100px;
+  }
 }
