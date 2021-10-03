@@ -135,10 +135,10 @@ p {
     font-size: 28px;
   }
   .font3 {
-    font-size: 24px;
+    font-size: 22px;
   }
   .font4 {
-    font-size: 20px;
+    font-size: 18px;
   }
   .font5 {
     font-size: 16px;
@@ -632,7 +632,7 @@ header {
 }
 @media (max-width: 796px) {
   .visiting-container {
-    /* height: 1313px; */
+    height: 1146px;
   }
 }
 
@@ -710,9 +710,34 @@ header {
     width: 45%;
   }
 }
-@media (max-width: 796px) {
+@media (max-width: 768px) {
+  .card-container {
+    max-width: calc(56px + 280px + 392px);
+    height: 983px;
+    position: unset;
+    margin-top: 70px;
+    padding: 0;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    column-gap: 0;
+    row-gap: 40px;
+  }
   .card {
     width: 280px;
+    height: 301px;
+  }
+  .card h3 {
+    font-size: 22px;
+    letter-spacing: 3px;
+    white-space: nowrap;
+  }
+  .card p {
+    padding-top: 10px;
+  }
+  .card-container .underline-title::after {
+    bottom: -6px;
+    width: 55%;
+    height: 2px;
   }
 }
 
@@ -837,7 +862,34 @@ header {
 }
 
 @media (max-width: 796px) {
+
+  .explore-section {
+    padding-top: 45px;
+    height: 908px;
+  }
   
+  .explore-container {
+    height: 800px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .explore-container .underline-title::after {
+    bottom: -25px;
+  }  
+  .las-meninas {
+    display: none;
+  }
+  .small-site-hidden {
+    display: none;
+  }
+  .painting-wrapper {
+    margin-top: 15px;
+  }
+  .explore-painting img {
+    width: 728px;
+    height: 705px;
+  }
 }
 
 /* Video Section */
@@ -880,6 +932,14 @@ header {
     display: none;
   }
 }
+@media only screen and (max-width: 768px) {
+  .video-container {
+    height: 745px;
+  }
+  .video-container .text-wrapper {
+    padding-bottom: 25px;
+  }
+}
 
 .main-video {
   position:relative;
@@ -893,13 +953,6 @@ header {
   background-repeat: no-repeat;  
 }
 
-@media (max-width: 1024px) {
-  .main-video {
-    max-width: 984px;
-    height: 504px;
-  }
-}
-
 .big-play-button {
   background: url(../assets/svg/big-play.svg);
   background-size: contain;
@@ -911,10 +964,25 @@ header {
 }
 
 @media (max-width: 1024px) {
+  .main-video {
+    max-width: 984px;
+    height: 504px;
+  }
   .big-play-button {
     width: 152px;
     height: 152px;
     margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main-video {
+    max-width: 728px;
+    height: 386px;
+  }
+  .big-play-button {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 55px;
   }
 }
 
@@ -935,11 +1003,6 @@ header {
   gap: 20px;
   justify-content: space-around;
   align-self:flex-end;
-}
-@media (max-width: 1024px) {
-  .video-controls {
-    height: 60px;
-  }
 }
 
 .video-controls-button {  
@@ -979,13 +1042,6 @@ header {
   background-repeat: no-repeat;
 } 
 
-@media (max-width: 1024px) {
-  .volume-button {
-    width: 26px;
-    height: 20px;
-  }
-}
-
 .screenmode-button {
   width: 30px;
   height: 30px;
@@ -996,9 +1052,26 @@ header {
 }
 
 @media (max-width: 1024px) {
+  .video-controls {
+    height: 60px;
+  }
+  .volume-button {
+    width: 26px;
+    height: 20px;
+  }
   .screenmode-button {
     width: 26px;
     height: 26px;
+  }
+}
+@media (max-width: 768px) {
+  .play-button {
+    width: 23px;
+    height: 24px;
+  }
+  .screenmode-button {
+    width: 24px;
+    height: 24px;
   }
 }
 
@@ -1050,6 +1123,14 @@ header {
     width: 143px;
   }
 }
+@media (max-width: 768px) {
+  .play-slider {
+    width: 350px;
+  }
+  .volume-slider {
+    width: 110px;
+  }
+}
 
 .video-collection {
   display: flex;
@@ -1069,12 +1150,25 @@ header {
 
 @media (max-width: 1024px) {
   .three-videos {
-    /* padding-top: 30px; */
     padding-bottom: 40px;
   }
   iframe {
     width: 300px;
     height: 170px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .three-videos {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  iframe {
+    width: 354px;
+    height: 199px;
+  }
+  .hidden-video-small-site {
+    display: none;
   }
 }
 
@@ -1103,6 +1197,7 @@ header {
   width: 12px;
   background-image: url(../assets/svg/video-dot.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   cursor: pointer;
 }
 
@@ -1126,6 +1221,17 @@ header {
 }
 .video-pagination-forward-arrow:hover {
   filter: invert(10%) sepia(36%) saturate(6711%) hue-rotate(348deg) brightness(70%) contrast(108%);
+}
+
+@media only screen and (max-width: 768px) {
+  .video-pagination {
+    width: 190px;
+    align-items: center;
+  }
+  .video-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 /* Gallery section */
