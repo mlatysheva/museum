@@ -430,11 +430,10 @@ header {
     height: 60px;
   }
   .welcome-container {
-    padding-top: -40px;
+    height: 585px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    height: 585px;
+    flex-direction: column;    
     background-image: url("../assets/img/1.jpg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -724,7 +723,7 @@ header {
   background-color: #FFFFFF;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
 
   .explore-section {
     padding-top: 65px;
@@ -1152,11 +1151,11 @@ header {
   height: 550px;
 }
 
-.ticket-type {
+/* .ticket-type {
   padding-right: 190px;
-}
+} */
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .tickets-container {
     height: 598px;
   }
@@ -1165,6 +1164,7 @@ header {
   }
   .ticket-amount {
     margin-right: 30px;
+    margin-left: 30px;
   }
   .ticket-image {
     width: 700px;
@@ -1195,7 +1195,6 @@ header {
   user-select: none;
 }
 
-/* Hide the browser's default radio button */
 .radio-container input {
   position: absolute;
   opacity: 0;
@@ -1204,7 +1203,6 @@ header {
   width: 0;
 }
 
-/* Create a custom radio button */
 .checkmark {
   position: absolute;
   top: 0;
@@ -1216,29 +1214,24 @@ header {
   border: 2px solid black;
 }
 
-/* On mouse-over, add a grey background color */
 .radio-container:hover input ~ .checkmark {
   background-color: #ccc;
 }
 
-/* When the radio button is checked, add a blue background */
 .radio-container input:checked ~ .checkmark {
   background-color: white;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .radio-container input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .radio-container .checkmark:after {
   top: 3px;
   left: 3px;
@@ -1307,7 +1300,7 @@ header {
   background-color: var(--font-gold);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 
   .amount-block {
     width: 175px;
@@ -1420,7 +1413,6 @@ footer {
 }
 
 .footer-wrapper {
-  width: 1440px;
   margin: 0 auto;
   padding-top: 80px;
   display: flex;
@@ -1514,7 +1506,7 @@ footer li {
   font-size: var(--font4);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
   .footer-top {
     padding-bottom: 20px;
   }
