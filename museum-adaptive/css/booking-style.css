@@ -16,6 +16,10 @@
   text-align: right;
 }
 
+body {
+  margin: 0 auto;
+}
+
 .booking-container {
   width: 970px;
   height: 665px;
@@ -67,6 +71,21 @@
   #form-ticket-number .underline-title::after {
     width: 95%;
     bottom: -10px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-container {
+    width: 590px;
+    height: 1479px;
+    margin: 50px auto;    
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .form-section {
+    width: 530px;
+    height: 643px;
+    margin-bottom: 50px;
   }
 }
 
@@ -125,6 +144,18 @@
   justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .narrow {
+    width: 251px;
+  }  
+  .wide {
+    width: 530px;
+  }
+  .ticket-specific {
+    margin-top: 40px;
+  }
+}
+
 /* Overview section */
 
 /* Top block */
@@ -174,8 +205,14 @@
   padding: 5px;
 }
 
-@media (max-width: 1024px) {
-
+@media (max-width: 768px) {
+  .overview-section {
+    width: 530px;
+    height: 665px;
+  }
+  .top-overview-block {
+    width: 500px; 
+  }
 }
 
 /* Price block */
@@ -261,4 +298,16 @@
 
 .button-red:hover {
   background-color: var(--font-gold);
+}
+
+@media (max-width: 768px) {
+  .price-section {
+    width: 500px;
+  }
+  .card-input-block {
+    width: 500px;
+  }
+  .button-red {
+    margin-right: 15px;
+  }
 }
