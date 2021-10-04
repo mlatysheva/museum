@@ -25,8 +25,6 @@ body {
 }
 
 main {
-  /* width: 100%;
-  margin: 0 auto; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,6 +150,25 @@ p {
   }
 }
 
+@media (max-width: 420px) {
+  .font1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .font2 {
+    font-size: 22px;
+  }
+  .font3 {
+    font-size: 18px;
+  }
+  .font4 {
+    font-size: 16px;
+  }
+  .font5 {
+    font-size: 16px;
+  }
+}
+
 .bold {
   font-weight: 400;
 }
@@ -254,15 +271,18 @@ header {
 
 .header-logo {
   width: 199px;
-  display: inline-flex;
-  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   width: 49px;
   height: 26px;
-  background-image: url(../assets/svg/Logo.svg);
+  background-image: url(../assets/svg/louvre.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .logo:hover {
@@ -377,6 +397,22 @@ header {
   .header {
     height: 110px;
   }  
+}
+@media only screen and (max-width: 420px) {
+  .header {
+    height: 90px;
+  }  
+  .header-logo {
+    width: 131px;
+  }  
+  .header-logo a {
+    font-size: 16px;
+  }
+  .logo {
+    width: 30px;
+    height: 20px;
+    background-size: contain;
+  }
 }
 
 /* End of burger menu */
@@ -495,7 +531,24 @@ header {
   #hiddenButton {
     display: none;
   }
+}
 
+@media only screen and (max-width: 420px) {
+  .welcome-section {
+    margin-top: 90px;
+    height: 544px;
+    padding-bottom: 0;
+  }
+  .welcome-container {
+    background-image: none;
+    height: 100%;
+  }
+  .welcome-image-small-site {
+    width: 380px;
+    height: 285px;
+    background-image: url(../assets/img/1-small.jpg);
+    background-size: contain;
+  }
 }
 
 .slider {
@@ -509,28 +562,6 @@ header {
   justify-content: space-evenly;
   align-items: center;
   background-color: #030303;
-}
-
-@media (max-width: 1024px) {
-  .slider {
-    width:100%;
-    bottom: -0;
-    justify-content: space-between;
-    padding: 40px 100px 40px 510px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .slider {
-    width: 100%;
-    height: 100px;
-    bottom: -0;
-    justify-content: space-between;
-    padding: 40px 183px 40px 183px;
-  }
-  .slider-numbers p {
-    padding: 0 10px;
-  }
 }
 
 .slider-numbers {
@@ -557,8 +588,8 @@ header {
 }
 
 .slider-bullet {
-  width: 12px;
-  height: 12px;
+  width: 16px;
+  height: 16px;
   margin: 5px;
   background-color: white;
   cursor: pointer;
@@ -605,6 +636,61 @@ header {
 .arrow-forward:hover, .arrow-forward:active {
   filter: invert(58%) sepia(55%) saturate(228%) hue-rotate(356deg) brightness(83%) contrast(85%);
 }
+@media (max-width: 1024px) {
+  .slider {
+    width:100%;
+    bottom: -0;
+    justify-content: space-between;
+    padding: 40px 100px 40px 510px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .slider {
+    width: 100%;
+    height: 100px;
+    bottom: -0;
+    justify-content: space-between;
+    padding: 40px 183px 40px 183px;
+  }
+  .slider-numbers p {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .slider {
+    height: 80px;
+    padding: 20px 60px 20px 60px;
+    align-self: center;
+  }
+  .slider-numbers p {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 3px;
+  }
+  .slider-numbers p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .slider-bullets {
+    width: 75px;
+  }
+  .slider-bullet {
+    width: 7px;
+    height: 7px;
+  }
+  .slider-numbers p {
+    font-size: 16px;
+  }
+}
 
 
 /* Visiting section */
@@ -630,6 +716,11 @@ header {
 @media (max-width: 796px) {
   .visiting-container {
     height: 1146px;
+  }
+}
+@media (max-width: 420px) {
+  .visiting-container {
+    height: 2073px;
   }
 }
 
@@ -735,6 +826,12 @@ header {
     bottom: -6px;
     width: 55%;
     height: 2px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    width: 280px;
+    height: 295px;
   }
 }
 
@@ -889,6 +986,41 @@ header {
   }
 }
 
+@media (max-width: 420px) {
+  .explore-section {
+    height: 551px;
+  }
+  .explore-painting {
+    width: 380px;
+    height: 368px;
+  }
+  .explore-painting img {
+    width: 380px;
+    height: 368px;
+  }
+  .painting-slider {
+    top: 170px;
+    left: 275px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FFFFFF;
+  }
+  
+  .painting-slider::before {
+    top: 16px;
+    left: 7px;
+    width: 2px;
+    height: 180px;
+  }
+  
+  .painting-slider::after {
+    bottom: 16px;
+    left: 7px;
+    width: 2px;
+    height: 172px;
+  }
+}
+
 /* Video Section */
 
 .video-container {
@@ -937,6 +1069,11 @@ header {
     padding-bottom: 25px;
   }
 }
+@media (max-width: 420px) {
+  .video-container {
+    height: 475px;
+  }
+}
 
 .main-video {
   position:relative;
@@ -982,6 +1119,17 @@ header {
     margin-bottom: 55px;
   }
 }
+@media (max-width: 420px) {
+  .main-video {
+    max-width: 380px;
+    height: calc(226px + 55px);
+  }
+  .big-play-button {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 45px;
+  }
+}
 
 .big-play-button:hover {
   filter: invert(55%) sepia(11%) saturate(939%) hue-rotate(356deg) brightness(96%) contrast(92%);
@@ -999,7 +1147,7 @@ header {
   flex-direction: row;
   gap: 20px;
   justify-content: space-around;
-  align-self:flex-end;
+  align-items: center;
 }
 
 .video-controls-button {  
@@ -1051,10 +1199,15 @@ header {
 @media (max-width: 1024px) {
   .video-controls {
     height: 60px;
+    padding: 0 25px;
+  }
+  .play-button {
+    width: 23px;
+    height: 26px;
   }
   .volume-button {
-    width: 26px;
-    height: 20px;
+    width: 35px;
+    height: 26px;
   }
   .screenmode-button {
     width: 26px;
@@ -1069,6 +1222,28 @@ header {
   .screenmode-button {
     width: 24px;
     height: 24px;
+  }
+  .volume-button {
+    width: 28px;
+    height: 24x;
+  }
+}
+@media (max-width: 420px) {
+  .video-controls {
+    height: 55px;
+    padding: 0 15px;
+  }
+  .play-button {
+    width: 16px;
+    height: 18px;
+  }
+  .screenmode-button {
+    width: 18px;
+    height: 18px;
+  }
+  .volume-button {
+    width: 22px;
+    height: 18px;
   }
 }
 
@@ -1128,6 +1303,21 @@ header {
     width: 110px;
   }
 }
+@media (max-width: 1024px) {
+  .video-slider {
+    height: 4px;
+  }
+  .video-slider::-webkit-slider-thumb {
+    width: 10px;
+    height: 10px;
+  }
+  .play-slider {
+    width: 150px;
+  }
+  .volume-slider {
+    width: 50px;
+  }
+}
 
 .video-collection {
   display: flex;
@@ -1168,6 +1358,16 @@ header {
     display: none;
   }
 }
+@media only screen and (max-width: 420px) {
+  iframe {
+    width: 180px;
+    height: 101px;
+  }
+  .ytp-large-play-button {
+    width: 30px;
+    height: 20px;
+  }
+}
 
 .video-pagination {
   width: 200px;
@@ -1190,7 +1390,7 @@ header {
 }
 
 .video-pagination-bullet {
-  height: 100%;
+  height: 12px;
   width: 12px;
   background-image: url(../assets/svg/video-dot.svg);
   background-repeat: no-repeat;
@@ -1230,6 +1430,12 @@ header {
     height: 10px;
   }
 }
+@media (max-width: 420px) {
+  .video-pagination-bullet {
+    height: 8px;
+    width: 8px;
+  }
+}
 
 /* Gallery section */
 
@@ -1248,6 +1454,11 @@ header {
   .gallery-section {
     height: 1220px;
     padding-top: 45px;
+  }
+}
+@media (max-width: 420px) {
+  .gallery-section {
+    height: 757px;
   }
 }
 
@@ -1305,7 +1516,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .picture-container {
     padding-top: 50px;
   }
@@ -1315,6 +1526,14 @@ header {
   }
   .picture-container img {
     max-width: 352px;
+  }
+}
+@media (max-width: 420px) {
+  .picture-inner-container {
+    height:780px;
+  }
+  .picture-container img {
+    max-width: 178px;
   }
 }
 
@@ -1343,6 +1562,9 @@ header {
 .ticket-image {
   width:720px;
   height: 550px;
+  background-image: url(../assets/img/buy-tickets-img.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 1200px) {
@@ -1365,7 +1587,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .tickets-container {
     height: 553px;
   }
@@ -1376,6 +1598,23 @@ header {
   .ticket-image {
     width: 444px;
     height: 340px;
+  }
+}
+@media (max-width: 420px) {
+  .tickets-container {
+    height: 679px;
+  }
+  .tickets-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .ticket-image {
+    width: 380px;
+    height: 160px;
+    background-image: url(../assets/img/Mith-buy-small.jpg);
+  }
+  .tickets-wrapper {
+    padding-top: 50px;
   }
 }
 
@@ -1532,18 +1771,48 @@ header {
   .ticket-amount {
     margin-left: 55px;
   }
+  .amount-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .amount-block h4 {
-    padding-bottom: 30pxs;
+    padding-bottom: 30px;
   }
   .amount-block p {
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 15px;
   }
+  .amount-block img {
+    width: 175px;
+    height: 50px;
+}
   .total-amount p {
-    padding-top: 45px;
+    padding-top: 60px;
   }
   .button {
     margin-top: 25px;
+  }
+}
+@media (max-width: 420px) {
+  .ticket-amount {
+    padding-top: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: center;
+  }
+  .amount-block h4 {
+    padding-bottom: 20px;
+  }
+  .amount-block p {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  .total-amount p {
+    padding-top: 35px;
+  }
+  .button {
+    margin-top: 15px;
   }
 }
 
@@ -1612,6 +1881,13 @@ header {
   letter-spacing: normal;
 }
 
+.map {
+  width: 960px;
+  height: 620px;
+  background-image: url(../assets/img/map.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .contacts-wrapper img {
   vertical-align: bottom;
 }
@@ -1634,6 +1910,10 @@ header {
   .contact-text-wrapper a {
     padding: 7px 0;
   }  
+  .map {
+    width: 694px;
+    height: 454px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .contacts-container {
@@ -1656,6 +1936,21 @@ header {
     width: 728px;
     height: 476px;
     margin-top: 35px;
+  }
+  .map {
+    width: 728px;
+    height: 476px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 420px) {
+  .contacts-container {
+    height: calc(556px + 40px);
+  }
+  .map {
+    width: 380px;
+    height: 248px;
+    background-image: url(../assets/img/louvre-position.jpg);
   }
 }
 
@@ -1681,10 +1976,12 @@ footer {
 }
 .footer-logo {
   width: 199px;
-  display: inline-flex;
-  align-items: baseline;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
+
 .footer-logo a {
   font-size: 28px;
   letter-spacing: 5px;
@@ -1771,6 +2068,9 @@ footer li {
 }
 
 @media (max-width: 1400px) {
+  .footer {
+    height: 368px;
+  }
   .footer-top {
     padding-bottom: 20px;
   }
@@ -1798,7 +2098,11 @@ footer li {
     padding-top: 50px;
     padding-bottom: 30px;
   }
+  .footer-logo {
+    align-items: baseline;
+  }
   .footer-top {
+    align-items: flex-start;
     justify-content: left;
   }
   .small-site-footer-links {
@@ -1824,5 +2128,32 @@ footer li {
   }
   .footer-bottom a {
     font-size: 22px;
+  }
+}
+@media (max-width: 420px) {
+  .footer-hidden-small-site {
+    display: none;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .footer-logo {
+    width: 131px;
+    padding-bottom: 20px;
+  }
+  .footer-logo a {
+    font-size: 16px;
+  }
+  .small-site-footer-links {
+    width: 380px;
+    margin-left: 0;
+  }
+  .footer-links-list {
+    width: 380px;
+    column-gap: 30px;
+    column-count: 3;
+  }
+  .footer-bottom a {
+    font-size: 16px;
   }
 }
