@@ -21,7 +21,8 @@ bullets.forEach((bullet, index) => {
 // change images backward
 function slidingBackward () {
   let nextImageIndex;
-  const currentImage = window.getComputedStyle(welcomeContainer).getPropertyValue('background-image');
+  let currentImage = window.getComputedStyle(welcomeContainer).getPropertyValue('background-image');
+  console.log('currentImage is: '+ currentImage);
   let currentImageIndex = parseInt(currentImage.charAt(currentImage.length-8));
   if (currentImageIndex === 1) {
     nextImageIndex = 5;
