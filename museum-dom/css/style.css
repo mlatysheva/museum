@@ -906,26 +906,31 @@ header {
 .painting-wrapper {
   margin-top: 10px;
   width: 720px;
-  height: 710px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-self: center;
+  position: relative;
 }
 
 .explore-painting {
-  position: relative;
-  width: 720px;
-  height: 700px;
-}
-
-.explore-painting img {  
   position: absolute;
   width: 720px;
   height: 700px;
+  overflow: hidden;
+}
+
+.bottom-painting, .top-painting {
+  display: block;
+}
+
+#explore-painting-renovated {
+  width: 433px;
 }
 
 .painting-slider {
   position: absolute;
+  z-index: 10;
   top: 335px;
   left: 415px;
   cursor: ew-resize;
@@ -938,6 +943,7 @@ header {
 
 .painting-slider::before {
   position: absolute;
+  z-index: 9;
   top: 30px;
   left: 12px;
   content: "";
@@ -948,6 +954,7 @@ header {
 
 .painting-slider::after {
   position: absolute;
+  z-index: 8;
   bottom: 30px;
   left: 12px;
   content: "";
@@ -987,10 +994,7 @@ header {
   .text-wrapper h2 {
     margin-bottom: 50px;
   }
-  .explore-painting {
-    margin-top: 0;
-    align-self: center;
-  }
+
   .painting-wrapper {
     margin-top: 50px;
   }
@@ -1031,6 +1035,10 @@ header {
   .explore-section {
     height: 551px;
   }
+  .painting-wrapper {
+    width: 380px;
+    height: 368px;
+  }
   .explore-painting {
     width: 380px;
     height: 368px;
@@ -1039,9 +1047,13 @@ header {
     width: 380px;
     height: 368px;
   }
+
+  #explore-painting-renovated {
+    width: 230px;
+  }
   .painting-slider {
     top: 170px;
-    left: 275px;
+    left: 225px;
     width: 20px;
     height: 20px;
     border: 2px solid #FFFFFF;

@@ -22,7 +22,6 @@ bullets.forEach((bullet, index) => {
 function slidingBackward () {
   let nextImageIndex;
   let currentImage = window.getComputedStyle(welcomeContainer).getPropertyValue('background-image');
-  console.log('currentImage is: '+ currentImage);
   let currentImageIndex = parseInt(currentImage.charAt(currentImage.length-8));
   if (currentImageIndex === 1) {
     nextImageIndex = 5;
@@ -60,6 +59,7 @@ backwardArrow.addEventListener('click', slidingBackward);
 // change images by clicking on the forward arrow
 forwardArrow.addEventListener('click', slidingForward);
 
+let isEnabled = true;
 const swipedetect = (el) => {
   
 	let surface = el;
