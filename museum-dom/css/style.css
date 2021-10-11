@@ -619,9 +619,6 @@ header {
 .slider-bullet.active {
   background-color: #9d8665;
 }
-/* #active-bullet {
-  background-color: #9d8665;
-} */
 
 .slider-bullet:hover {
   background-color: #710707;
@@ -791,6 +788,12 @@ header {
   max-width: 440px;
   max-height: 424px;
 }
+.card a {
+  color: black;
+}
+.visiting-card-title {
+  padding-top: 20px;
+}
 
 .card img {
   width: 100%;
@@ -800,6 +803,10 @@ header {
 .card p {
   padding-top: 20px;
   padding-bottom: 0;
+}
+.street-view {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* @media (max-width: 1450px) { */
