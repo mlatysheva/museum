@@ -33,6 +33,7 @@ function slidingBackward () {
     bullet.classList.remove("active")
   })  
   welcomeContainer.style.backgroundImage = `url('${imageArray[nextImageIndex-1]}')`;
+  welcomeContainer.style.transition = "0.5s ease";
   firstNumber.innerHTML = `0${nextImageIndex}`;
   bullets.item(nextImageIndex-1).classList.toggle("active");
 }
@@ -51,6 +52,7 @@ function slidingForward() {
     bullet.classList.remove("active")
   })
   welcomeContainer.style.backgroundImage = `url('${imageArray[nextImageIndex-1]}')`;
+  welcomeContainer.style.transition = "0.5s ease";
   firstNumber.innerHTML = `0${nextImageIndex}`;
   bullets.item(nextImageIndex-1).classList.toggle("active");
 }
