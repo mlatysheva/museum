@@ -1,1 +1,1 @@
-console.log('RS School tasks performed: \nAdded javascript functionality for: \nWelcome Section, \nExplore Section and \na little in the main Video controls');
+console.log('RS School tasks performed: \nAdded javascript functionality for: \nWelcome Section, \nExplore Section, \nInteractive Map and \na little in the main Video controls');

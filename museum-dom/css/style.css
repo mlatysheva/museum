@@ -1954,12 +1954,12 @@ header {
   letter-spacing: normal;
 }
 
-.map {
+#map {
   width: 960px;
   height: 620px;
-  background-image: url(../assets/img/map.jpg);
+  /* background-image: url(../assets/img/map.jpg);
   background-size: contain;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 .contacts-wrapper img {
   vertical-align: bottom;
@@ -1983,7 +1983,7 @@ header {
   .contact-text-wrapper a {
     padding: 7px 0;
   }  
-  .map {
+  #map {
     width: 694px;
     height: 454px;
   }
@@ -2010,7 +2010,7 @@ header {
     height: 476px;
     margin-top: 35px;
   }
-  .map {
+  #map {
     width: 728px;
     height: 476px;
     margin-top: 40px;
@@ -2033,11 +2033,11 @@ header {
     font-size: 16px;
     /* padding: 6px 0; */
   }
-  .map {
+  #map {
     width: 380px;
     height: 248px;
     margin-top: 35px;
-    background-image: url(../assets/img/louvre-position.jpg);
+    /* background-image: url(../assets/img/louvre-position.jpg); */
   }
 }
 
