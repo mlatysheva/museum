@@ -7,6 +7,13 @@ const map = new mapboxgl.Map({
   zoom: 16 // starting zoom
 });
 
+const navigation = new mapboxgl.NavigationControl({
+  showCompass: true,
+})
+
+map.addControl(navigation, 'top-right');
+
+
 // Create a default Marker and add it to the map.
 const marker1 = new mapboxgl.Marker({color: 'black'})
 .setLngLat([2.3364, 48.86091])
