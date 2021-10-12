@@ -10,6 +10,7 @@ const imageArray = ['./assets/img/welcome-slider-1.jpeg', './assets/img/welcome-
 bullets.forEach((bullet, index) => {
   bullet.addEventListener('click', () => {
     welcomeContainer.style.backgroundImage = `url(${imageArray[index]})`;
+    welcomeContainer.style.transition = "0.5s ease";
     bullets.forEach((element) => {
       element.classList.remove("active")
     })
