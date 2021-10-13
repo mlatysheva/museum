@@ -10,7 +10,7 @@ const imageArray = ['./assets/img/welcome-slider-1.jpeg', './assets/img/welcome-
 bullets.forEach((bullet, index) => {
   bullet.addEventListener('click', () => {
     welcomeContainer.style.backgroundImage = `url(${imageArray[index]})`;
-    welcomeContainer.style.transition = "0.7s ease";
+    // welcomeContainer.style.transition = "0.7s ease";
     bullets.forEach((element) => {
       element.classList.remove("active")
     })
@@ -33,7 +33,7 @@ function slidingBackward () {
     bullet.classList.remove("active")
   })  
   welcomeContainer.style.backgroundImage = `url('${imageArray[nextImageIndex-1]}')`;
-  welcomeContainer.style.transition = "0.7s ease";
+  // welcomeContainer.style.transition = "0.7s ease";
   firstNumber.innerHTML = `0${nextImageIndex}`;
   bullets.item(nextImageIndex-1).classList.toggle("active");
 }
@@ -52,7 +52,7 @@ function slidingForward() {
     bullet.classList.remove("active")
   })
   welcomeContainer.style.backgroundImage = `url('${imageArray[nextImageIndex-1]}')`;
-  welcomeContainer.style.transition = "0.7s ease";
+  // welcomeContainer.style.transition = "0.7s ease";
   firstNumber.innerHTML = `0${nextImageIndex}`;
   bullets.item(nextImageIndex-1).classList.toggle("active");
 }

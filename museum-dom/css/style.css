@@ -452,6 +452,7 @@ header {
   z-index: 2;
   background: linear-gradient(90deg, black 0%, transparent 100%);
 }
+
 .welcome-text-small-site {
   z-index: 10;
 }
